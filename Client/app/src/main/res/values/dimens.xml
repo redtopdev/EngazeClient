@@ -1,0 +1,19 @@
+<resources>
+
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="nav_drawer_width">260dp</dimen>
+    <dimen name="padding">16dp</dimen>
+    <dimen name="padding_one_half">24dp</dimen>
+    <dimen name="padding_double">32dp</dimen>
+    <dimen name="paddinghalf">8dp</dimen>
+    <dimen name="paddingQuarter">4dp</dimen>
+    <dimen name="primary_text_size">16sp</dimen>
+    <dimen name="large_text_size">24sp</dimen>
+    <dimen name="map_dot_marker_size">12dp</dimen>
+    <dimen name="extra_small_text_size">12dp</dimen>
+    <dimen name="small_text_size">14dp</dimen>
+    <dimen name="marker_size">48dp</dimen>
+    <dimen name="marker_circle_size">30dp</dimen>
+    <dimen name="pin_size">45dp</dimen>
+    <dimen name="pin_circle_size">21dp</dimen>
+</resources>

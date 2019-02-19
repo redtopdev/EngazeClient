@@ -1,0 +1,72 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clipChildren="false">
+
+    <RelativeLayout
+        android:id="@+id/rl_map_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:clipChildren="false">
+
+        <FrameLayout
+            android:id="@+id/map_fragment_container"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/rl_selected_location"
+            android:paddingBottom="@dimen/paddinghalf" />
+
+        <RelativeLayout
+            android:id="@+id/rl_selected_location"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginTop="@dimen/paddinghalf"
+            android:background="@color/colorBackground"
+            android:clipChildren="false"
+            android:elevation="15dip">
+
+            <ImageButton
+                android:id="@+id/img_add_location"
+                style="@style/RightCircularImageStyle"
+                android:layout_width="48dip"
+                android:layout_height="48dip"
+                android:layout_alignParentTop="true"
+                android:layout_marginRight="@dimen/padding"
+                android:layout_marginTop="-24dip"
+                android:padding="@dimen/padding"
+                android:src="@drawable/ic_check_white_24dp" />
+
+            <TextView
+                android:id="@+id/txt_selected_location_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_marginBottom="@dimen/paddinghalf"
+                android:layout_marginLeft="@dimen/padding"
+                android:layout_marginRight="@dimen/padding"
+                android:layout_marginTop="24dip"
+                android:textColor="@color/primary_text"
+                android:textSize="@dimen/primary_text_size" />
+
+            <TextView
+                android:id="@+id/txt_selected_location_address"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txt_selected_location_name"
+                android:layout_marginBottom="@dimen/padding"
+                android:layout_marginLeft="@dimen/padding"
+                android:layout_marginRight="@dimen/padding"
+                android:textColor="@color/secondary_text"
+                android:textSize="12sp" />
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+    <FrameLayout
+        android:id="@+id/search_location_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+</RelativeLayout>

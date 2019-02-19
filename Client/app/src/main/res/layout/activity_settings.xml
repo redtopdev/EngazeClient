@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorBackground"
+    android:orientation="vertical" >
+
+    <android.support.v7.widget.Toolbar
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:local="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/setting_toolbar"
+        style="@style/ETMaterialTheme.ActionBar" />
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <TableLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content" >
+
+                <TableRow
+                    android:id="@+id/row_help"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content" >
+
+                    <ImageView
+                        android:id="@+id/icon_help"
+                        style="@style/IconStyle"
+                        android:layout_width="60sp"
+                        android:background="@drawable/ic_check_black_24dp"
+                        android:backgroundTint="#8A000000" >
+                    </ImageView>
+
+                    <TextView
+                        android:id="@+id/txt_help"
+                        style="@style/PrimaryTextStyle"
+                        android:text="@string/setting_menu_help" />
+
+                    <View style="@style/Divider" />
+                </TableRow>
+
+                <View style="@style/Divider" />
+
+                <TableRow
+                    android:id="@+id/row_profile"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#fff" >
+
+                    <com.redtop.engaze.fontawesome.TextFont
+                        android:id="@+id/icon_profile"
+                        style="@style/IconStyle"
+                        android:layout_width="60sp"
+                        android:text="@string/fa_user"
+                        android:textSize="20sp" />
+
+                    <TextView
+                        android:id="@+id/txt_profile"
+                        style="@style/PrimaryTextStyle"
+                        android:text="@string/setting_menu_profile" />
+                </TableRow>
+
+                <View style="@style/Divider" />
+
+                <TableRow
+                    android:id="@+id/row_account"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#fff" >
+
+                    <com.redtop.engaze.fontawesome.TextFont
+                        android:id="@+id/icon_account"
+                        style="@style/IconStyle"
+                        android:layout_width="60sp"
+                        android:text="@string/fa_key"
+                        android:textSize="20sp" />
+
+                    <TextView
+                        android:id="@+id/txt_account"
+                        style="@style/PrimaryTextStyle"
+                        android:text="@string/setting_menu_account" />
+                </TableRow>
+
+                <View style="@style/Divider" />
+
+                <TableRow
+                    android:id="@+id/row_event_settings"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#fff" >
+
+                    <com.redtop.engaze.fontawesome.TextFont
+                        android:id="@+id/icon_event_settings"
+                        style="@style/IconStyle"
+                        android:layout_width="60sp"
+                        android:text="@string/fa_bookmark"
+                        android:textSize="20sp" />
+
+                    <TextView
+                        android:id="@+id/txt_event_settings"
+                        style="@style/PrimaryTextStyle"
+                        android:text="@string/setting_menu_event_settings" />
+                </TableRow>
+
+                <View style="@style/Divider" />
+
+                <TableRow
+                    android:id="@+id/row_contacts"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#fff" >
+
+                    <com.redtop.engaze.fontawesome.TextFont
+                        android:id="@+id/icon_contacts"
+                        style="@style/IconStyle"
+                        android:layout_width="60sp"
+                        android:text="@string/fa_users"
+                        android:textSize="20sp" />
+
+                    <TextView
+                        android:id="@+id/txt_contacts"
+                        style="@style/PrimaryTextStyle"
+                        android:text="@string/setting_menu_contacts" />
+                </TableRow>
+
+                <View style="@style/Divider" />
+            </TableLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rl_main_menu_buttons"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:alpha=".5"
+        android:background="@color/colorBackground" >
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingBottom="@dimen/paddinghalf"
+        android:paddingTop="12dp" >
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/paddinghalf"
+            android:layout_weight="1" >
+
+            <ImageButton
+                android:id="@+id/img_meet_now"
+                style="@style/HomeMenuButton"
+                android:alpha="1.0"
+                android:background="@drawable/ripple_teal"
+                android:src="@drawable/ic_meetnow_white_24dp" />
+
+            <TextView
+                android:id="@+id/txt_meet_now"
+                style="@style/HomeMenuText"
+                android:layout_below="@+id/img_meet_now"
+                android:text="@string/label_home_menu_meetnow" >
+            </TextView>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" >
+
+            <ImageButton
+                android:id="@+id/img_meet_later"
+                style="@style/HomeMenuButton"
+                android:layout_centerHorizontal="true"
+                android:alpha="1.0"
+                android:background="@drawable/ripple_bluegray"
+                android:src="@drawable/ic_event_add" />
+
+            <TextView
+                android:id="@+id/txt_meet_later"                
+                style="@style/HomeMenuText"
+                android:layout_below="@+id/img_meet_later"
+                android:text="@string/label_home_menu_meetlater" >
+            </TextView>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" >
+
+            <ImageButton
+                android:id="@+id/img_track_buddy"
+                style="@style/HomeMenuButton"
+                android:background="@drawable/ripple_amber"
+                android:src="@drawable/ic_trackbuddy" />
+
+            <TextView
+                android:id="@+id/txt_track_buddy"
+                style="@style/HomeMenuText"
+                android:layout_below="@+id/img_track_buddy"
+                android:text="@string/label_home_menu_trackbuddy" >
+            </TextView>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" >
+
+            <ImageButton
+                android:id="@+id/img_share_mylocation"
+                style="@style/HomeMenuButton"
+                android:background="@drawable/ripple_lightgreen"
+                android:src="@drawable/ic_trackme" />
+
+            <TextView
+                android:id="@+id/txt_share_my_location"
+                style="@style/HomeMenuText"
+                android:layout_below="@+id/img_share_mylocation"
+                android:text="@string/label_home_menu_sharemylocation" >
+            </TextView>
+        </RelativeLayout>
+    </LinearLayout>
+
+</FrameLayout>
